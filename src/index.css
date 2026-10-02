@@ -1,0 +1,76 @@
+@import 'tailwindcss';
+
+:root {
+  --primary: #015871;
+  --primary-strong: #003f54;
+  --secondary: #eaf4f8;
+  --accent: #FF0000;
+  --bg: #F9FBFC;
+  --surface: #eef5f8;
+  --surface-strong: #ffffff;
+  --border: rgba(1, 88, 113, 0.12);
+  --heading: #1d2b31;
+  --text: #575757;
+  --muted: #7a7d80;
+  --shadow: 0 12px 32px rgba(1, 88, 113, 0.08);
+  --radius: 28px;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+input,
+textarea,
+select {
+  color: var(--heading);
+}
+
+::selection {
+  background: rgba(22, 61, 97, 0.18);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
